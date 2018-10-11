@@ -49,7 +49,7 @@ Create a simple terminal app that does the following.  There is no express, so t
 
 Write the previous exercise so that creating/updating/finding/deleting apple happened "at the same time" as creating/updating/finding/deleting google.  Take advantage of node's asynchronous nature!
 
-# Hungry for More?
+## Hungry for More?
 
-Try to integrate this into an express app.  Have each step be its own page with a link to the next step (which is also a page).
+Integrate this into an express app. Have each step be its own page with a link to the next step (which is also a page).
 
