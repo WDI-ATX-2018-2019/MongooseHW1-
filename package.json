@@ -1,0 +1,22 @@
+{
+  "name": "mongoosehw1-",
+  "version": "1.0.0",
+  "description": "Practice using mongoose database",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwerbin95/MongooseHW1-.git"
+  },
+  "author": "Jacob Werbin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwerbin95/MongooseHW1-/issues"
+  },
+  "homepage": "https://github.com/jwerbin95/MongooseHW1-#readme",
+  "dependencies": {
+    "mongoose": "^5.4.6"
+  }
+}
