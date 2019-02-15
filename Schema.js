@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 mongoose.set('useNewUrlParser', true)
 const Schema = mongoose.Schema
-const myDb = 'mongodb://localhost:27017/companyDb'
+const myDb = 'mongodb://localhost:27017'
 let db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -28,7 +28,7 @@ const Google = new company({
 	employees: 57100,
 	active: true,
 	products: ['search','maps','email'],
-	CEO: {name:'Larry Page', age:41}
+	CEO: {name:'Larry Page', age:41},
 })
 
 const Apple = new company({
@@ -43,10 +43,14 @@ const Apple = new company({
 Google.save()
 Apple.save()
 
+
+
 company.find(function (err, company) {
   if (err) return console.error(err);
   console.log(company);
 })
+
+company.deleteMany(Apple, Google)
 
 
 mongoose.connect(myDb)
